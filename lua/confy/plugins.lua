@@ -56,4 +56,9 @@ return require('packer').startup(function(use)
     -- Colorschemes
     use({ 'rose-pine/neovim', as = 'rose-pine' })
     use 'rebelot/kanagawa.nvim'
+    use { 'AlphaTechnolog/pywal.nvim', as = 'pywal' }
+    use {
+        'nvim-lualine/lualine.nvim',
+        requires = { 'nvim-tree/nvim-web-devicons', opt = true }
+    }
 end)
