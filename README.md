@@ -1,4 +1,4 @@
 # nvim
 my neovim config
 TODOs:
-- [ ] convert to Lazy.nvim
+- [ ] convert to lazy.nvim[https://github.com/folke/lazy.nvim]
