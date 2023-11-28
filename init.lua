@@ -1,1 +1,2 @@
-require("confy")
+require("confy.core")
+require("confy.lazy")
