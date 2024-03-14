@@ -4,7 +4,7 @@ return {
         lazy = false,
         dependencies = {'MunifTanjim/nui.nvim'},
         config = function ()
-            vim.api.nvim_set_keymap('n', ':', '<cmd>FineCmdline<CR>', {noremap = true}) 
+            vim.api.nvim_set_keymap('n', ':', '<cmd>FineCmdline<CR>', {noremap = true})
         end,
     },
     {
@@ -17,8 +17,12 @@ return {
     {
         'mbbill/undotree',
         lazy = false,
-        config = function() 
+        config = function()
             vim.keymap.set('n', "<leader>u", vim.cmd.UndotreeToggle)
         end
+    },
+    {
+        'fatih/vim-go',
+        lazy = false,
     },
 }
