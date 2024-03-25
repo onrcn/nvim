@@ -66,6 +66,29 @@ return {
         lsp_zero.default_keymaps({buffer = bufnr})
       end)
 
+      require('lspconfig').pylsp.setup({
+          on_attach = on_attach,
+          settings = {
+              pylsp = {
+                  plugins = {
+                      flake8 = {
+                          enabled = false,
+                          maxLineLength = 119,
+                      },
+                      mypy = {
+                          enabled = true,
+                      },
+                      pycodestyle = {
+                          enabled = false,
+                      },
+                      pyflakes = {
+                          enabled = false,
+                      },
+                  }
+              }
+          }
+      })
+
       require('mason-lspconfig').setup({
         ensure_installed = {},
         handlers = {
