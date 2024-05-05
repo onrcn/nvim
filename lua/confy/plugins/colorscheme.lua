@@ -1,5 +1,57 @@
 return {
     {
+        -- Solarized for nvim
+        'ishan9299/nvim-solarized-lua',
+        lazy = false,
+        priority=1000,
+        config = function()
+            vim.g.solarized_italic = 1
+            vim.g.solarized_contrast = 'high'
+            vim.g.solarized_visibility = 'high'
+            vim.g.solarized_termcolors = 256
+            vim.g.solarized_diffmode = 'high'
+            vim.g.solarized_cursor_guifg = 1
+            vim.g.solarized_cursor_bg = 0
+            vim.g.solarized_termtrans = 1
+            vim.g.solarized_statusline = 'normal'
+            vim.g.solarized_italics = 1
+            vim.g.solarized_bold = 1
+            vim.g.solarized_underline = 1
+            vim.g.solarized_undercurl = 1
+            vim.g.solarized_termcolors = 256
+            vim.g.solarized_visibility = 'high'
+            vim.g.solarized_diffmode = 'high'
+            vim.g.solarized_termtrans = 1
+            vim.g.solarized_statusline = 'normal'
+            vim.g.solarized_italics = 1
+            vim.g.solarized_bold = 1
+            vim.g.solarized_underline = 1
+            vim.g.solarized_undercurl = 1
+            vim.cmd([[colorscheme solarized]])
+        end,
+
+    },
+    {
+        'sainnhe/sonokai',
+        lazy = false,
+        priority=1000,
+        config = function()
+          --vim.g.sonokai_style = 'andromeda'
+          --vim.g.sonokai_enable_italic = 1
+          --vim.g.sonokai_disable_italic_comment = 1
+          --vim.cmd([[colorscheme sonokai]])
+        end,
+    },
+
+    {
+        'letorbi/vim-colors-modern-borland',
+        lazy = false,
+        priority=1000,
+        config = function()
+           -- vim.cmd([[colorscheme borland]])
+        end,
+    },
+    {
         'rose-pine/neovim',
         name = 'rose-pine',
         lazy = false,
@@ -16,41 +68,4 @@ return {
             -- vim.cmd([[colorscheme dracula]])
         end,
     },
-    {
-        'NTBBloodbath/doom-one.nvim',
-        lazy = false,
-        priority=1000,
-        config = function()
-            -- Add color to cursor
-            vim.g.doom_one_cursor_coloring = true
-            -- Set :terminal colors
-            vim.g.doom_one_terminal_colors = true
-            -- Enable italic comments
-            vim.g.doom_one_italic_comments = true
-            -- Enable TS support
-            vim.g.doom_one_enable_treesitter = true
-            -- Color whole diagnostic text or only underline
-            vim.g.doom_one_diagnostics_text_color = true
-            -- Enable transparent background
-            vim.g.doom_one_transparent_background = false
-
-            -- Pumblend transparency
-            vim.g.doom_one_pumblend_enable = false
-            vim.g.doom_one_pumblend_transparency = 20
-
-            -- Plugins integration
-            vim.g.doom_one_plugin_neorg = true
-            vim.g.doom_one_plugin_barbar = false
-            vim.g.doom_one_plugin_telescope = true
-            vim.g.doom_one_plugin_neogit = true
-            vim.g.doom_one_plugin_nvim_tree = true
-            vim.g.doom_one_plugin_dashboard = true
-            vim.g.doom_one_plugin_startify = true
-            vim.g.doom_one_plugin_whichkey = true
-            vim.g.doom_one_plugin_indent_blankline = true
-            vim.g.doom_one_plugin_vim_illuminate = true
-            vim.g.doom_one_plugin_lspsaga = false
-            vim.cmd([[colorscheme doom-one]])
-        end,
-    }
 }
