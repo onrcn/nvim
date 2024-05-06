@@ -54,8 +54,8 @@ return {
                     ['<C-u>'] = cmp.mapping.scroll_docs(-4),
                     ['<C-d>'] = cmp.mapping.scroll_docs(4),
                     ['<Enter>'] = cmp.mapping.confirm({select = true}),
-                    ['<Tab>'] = cmp_action.luasnip_jump_forward(),
-                    ['<C-Tab>'] = cmp_action.luasnip_jump_backward(),
+                    ['<C-f>'] = cmp_action.luasnip_jump_forward(),
+                    ['<C-b>'] = cmp_action.luasnip_jump_backward(),
                 })
             })
         end
@@ -64,6 +64,9 @@ return {
     -- LSP
     {
         'neovim/nvim-lspconfig',
+        opts = {
+            autoformat = true,
+        },
         cmd = {'LspInfo', 'LspInstall', 'LspStart'},
         event = {'BufReadPre', 'BufNewFile'},
         dependencies = {
