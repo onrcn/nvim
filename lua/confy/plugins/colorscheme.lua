@@ -27,7 +27,7 @@ return {
             vim.g.solarized_bold = 1
             vim.g.solarized_underline = 1
             vim.g.solarized_undercurl = 1
-            vim.cmd([[colorscheme solarized]])
+            --vim.cmd([[colorscheme solarized]])
         end,
 
     },
@@ -48,7 +48,7 @@ return {
         lazy = false,
         priority=1000,
         config = function()
-           -- vim.cmd([[colorscheme borland]])
+            -- vim.cmd([[colorscheme borland]])
         end,
     },
     {
@@ -65,7 +65,15 @@ return {
         lazy = false,
         priority=1000,
         config = function()
-            -- vim.cmd([[colorscheme dracula]])
+            --vim.cmd([[colorscheme dracula]])
         end,
+    },
+    {
+       'atelierbram/Base2Tone-nvim',
+       lazy =false,
+       priority=1000,
+       config = function()
+           vim.cmd([[colorscheme base2tone_lavender_dark]])
+       end,
     },
 }

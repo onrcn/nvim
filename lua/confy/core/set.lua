@@ -11,8 +11,8 @@ vim.opt.swapfile = false
 vim.opt.backup = false
 
 
--- vim.opt.undodir = os.getenv("HOME") .. "/.vim/undotree"
-vim.opt.undodir = "C:/Users/erene/Personal/vim/undotree"
+vim.opt.undodir = os.getenv("HOME") .. "/.vim/undotree"
+-- vim.opt.undodir = "C:/Users/erene/Personal/vim/undotree"
 vim.opt.undofile = true
 
 
