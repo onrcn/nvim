@@ -1,6 +1,6 @@
 ### MIGRATED
 Migrated to :
 
-(https://github.com/onrcn/.dotfiles)[.dotfiles]
+[.dotfiles](https://github.com/onrcn/.dotfiles)
 
 
